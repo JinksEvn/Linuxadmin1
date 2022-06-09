@@ -31,12 +31,12 @@ echo "Installed remirepo"
 yum install -y yum-utils
 echo "Installed yum-utils"
 
-#
+#to enable remi
 yum-config-manager --enable remi-php56
 
 #
 yum install -y php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
-
+echo "php-mcrypt php-cli php-curl php-mysql php-ldap php-zip php-fileinfo"
 #restart the web server
 systemctl restart httpd
 
